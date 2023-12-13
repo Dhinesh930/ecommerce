@@ -20,15 +20,15 @@ export const cartSlice = createSlice({
         },
         modifyItem: (state, { payload }) => {
             const index = state.list.findIndex(
-                (product) => product.id === payload.id
+              (product) => product.id === payload.id
             );
-            
-                state.list = [
-                    ...state.list.slice(0, index),
-                    { ...state.list[index], count: payload.count },
-                    ...state.list.slice(index + 1),
-                ];
-            }
+            state.list = [
+              ...state.list.slice(0, index),
+              { ...state.list[index], count: payload.count },
+              ...state.list.slice(index + 1),
+            ];
+          },
+          
         },
     
 });

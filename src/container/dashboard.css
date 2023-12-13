@@ -21,6 +21,8 @@
     width: 100%;
     max-width: 300px;
     min-height: 200px;
+    height: 200px;
+    border-radius: 5px;
     display: block;
     object-fit: cover;
 }
